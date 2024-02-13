@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast Webapp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="card" id="card-container">
+        <div id="weather-container">
+            <img id="weather-background" src="clear-back.jpg" alt="">
+            <div id="weather">
+                <div id="weather-date">
+                    <h2 id="day">Tuesday</h2>
+                    <h4 id="date">August 12, 2024</h4>
+                    <h4 id="city">Paris, FR</h4>
+                </div>
+                <div id="weather-degree">
+                    <h1 id="degree">20°C</h1>
+                    <h5 id="weathers">Sunny</h5>
+                </div>
+            </div>
+        </div>
+
+        <div id="detail-container">
+            <div id="container">
+                <div class="container-style">
+                    <img src="Resource\precipitation.png" alt="" width="45px">
+                    <p id="humidity">20%</p>
+                </div>
+                <div class="container-style">
+                    <img src="Resource\wind.png" alt="" width="60px">
+                    <p id="wind">0 km/h</p>
+                </div>
+            </div>
+            <div id="temp-detail">
+                <div id="temperature">
+                    <p>TEMPERATURE</p>
+                    <p id="temp">20°C</p>
+                </div>
+                <div id="feel-like">
+                    <p>FEEL'S LIKE</p>
+                    <p id="feel">20°C</p>
+                </div>
+            </div>
+            <div id="sunrise-sunset">
+                <img src="Resource/sunrise-sunset.png" alt="" width="300px">
+                <div id="time">
+                    <p id="sunrise">02:30 AM</p>
+                    <p id="sunset">02:30 PM</p>
+                </div>
+            </div>
+            <div id="search-space">
+                <input type="text" placeholder="Type the city name" spellcheck="false">
+                <button><i class="ri-search-line"></i></button>
+            </div>
+            <div id="error">
+                <p>Invalid City Name</p>
+            </div>
+        </div>
+    </div>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet"/>
+    <script src="script.js"></script>
+</body>
+</html>
