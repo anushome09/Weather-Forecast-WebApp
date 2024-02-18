@@ -12,6 +12,9 @@ async function checkWeather(city) {
         document.querySelector("#error").style.display = "block"
         document.querySelector("#search-space input").style.border = "3px solid rgba(250, 125, 125)"
     } else {
+        document.querySelector("#error").style.display = "none"
+        document.querySelector("#search-space input").style.border = "none"
+        
         var data = await response.json();
 
         document.querySelector("#card-container").style.display = "flex";
